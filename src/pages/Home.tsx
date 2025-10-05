@@ -199,7 +199,7 @@ const Home = () => {
               Core Technologies
             </h2>
             <div className="flex flex-wrap justify-center gap-4">
-              {['Spring Boot', 'React.js', 'Azure Kubernetes', 'AWS (EC2, S3)', 'CI/CD', 'Java'].map((skill, index) => (
+              {['Spring Boot', 'React.js', 'Azure Kubernetes', 'AWS (EC2, S3)', 'Java', 'C++', 'MongoDb', 'MySql',].map((skill, index) => (
                 <Badge 
                   key={index} 
                   variant="outline" 

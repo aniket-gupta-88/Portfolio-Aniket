@@ -15,12 +15,12 @@ const skillsData = {
   },
   'Databases': {
     icon: Database,
-    skills: ['MongoDB', 'MySQL', 'PostgreSQL', 'Redis'],
+    skills: ['Mongo-DB', 'MySQL', 'OraclDB', 'Redis'],
     color: 'text-primary',
   },
   'Cloud & DevOps': {
     icon: Cloud,
-    skills: ['AWS (EC2, S3)', 'Azure Kubernetes', 'CI/CD', 'Git', 'GitHub', 'Docker', 'Linux'],
+    skills: ['AWS ', 'Azure Kubernetes', 'Git', 'GitHub', 'Docker', 'Linux'],
     color: 'text-secondary',
   },
 };

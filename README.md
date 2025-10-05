@@ -1,73 +1,60 @@
-# Welcome to your Lovable project
+# 🚀 Aniket Gupta | Full Stack Developer Portfolio
 
-## Project info
+This is the source code for my professional portfolio website, showcasing my experience in building scalable microservices and full-stack applications using the MERN/Spring Boot ecosystems.
 
-**URL**: https://lovable.dev/projects/900817ac-7baf-4b9b-a6d1-0d0ba93a37ac
+The website is designed as a multi-page recruitment dashboard to provide a quick, high-impact overview of my skills, projects, and professional background.
 
-## How can I edit this code?
+## 🌟 Key Features
 
-There are several ways of editing your application.
+- **Multi-Page Structure:** Dedicated pages for detailed **Experience**, **Projects**, and **Skills**.
+- **Scalability Focus:** Content emphasizes my expertise in Spring Boot, microservices architecture, and cloud technologies (AWS, Azure Kubernetes).
+- **Aesthetics:** Modern, clean design with a **Dark Mode** default and a persistent Light Mode toggle.
+- **Responsiveness:** Fully optimized for all screen sizes (Desktop, Tablet, Mobile).
 
-**Use Lovable**
+## 🛠️ Tech Stack & Architecture
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/900817ac-7baf-4b9b-a6d1-0d0ba93a37ac) and start prompting.
+This project is built with modern web technologies:
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Frontend:** HTML5, CSS3, JavaScript
+- **Styling/Framework:** [Insert specific framework if used, e.g., Tailwind CSS, Bootstrap]
+- **Deployment:** Vercel (or similar hosting for static sites)
 
-**Use your preferred IDE**
+## 🌐 Live URL
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+The portfolio is deployed and actively maintained at:
+**[Insert Vercel/Live URL Here After Deployment]**
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 💡 Projects Showcased
 
-Follow these steps:
+The portfolio provides a detailed overview of key projects, including:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+| Project Name                      | Key Technology Focus                                        | Status         |
+| :-------------------------------- | :---------------------------------------------------------- | :------------- |
+| **FoodUp** (Online Food Ordering) | Spring Boot, React, Full-stack architecture                 | In Development |
+| **NexTalk**                       | Real-time Communication (WebSockets), Secure Authentication | Complete       |
+| **Inventory Management System**   | Role-Based Access Control (RBAC), Analytics Dashboard       | Complete       |
+| **Course Management System**      | Full-stack CMS with separate Frontend/Backend repos         | Complete       |
+| **Book Review API**               | RESTful API Design, Backend Development                     | Complete       |
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 🏃 Getting Started (Local Development)
 
-# Step 3: Install the necessary dependencies.
-npm i
+To run this project locally, follow these steps:
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/YOUR_GITHUB_USERNAME/Portfolio-Aniket.git](https://github.com/YOUR_GITHUB_USERNAME/Portfolio-Aniket.git)
+    ```
+2.  **Navigate to the project directory:**
+    ```bash
+    cd Portfolio-Aniket
+    ```
+3.  **Open the file:**
+    Since this is a static site (HTML/CSS/JS), simply open the `index.html` file in your browser to view the portfolio.
 
-**Edit a file directly in GitHub**
+## 🤝 Connect with Me
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- **LinkedIn:** https://www.linkedin.com/in/aniket-gupta-2a2a16207/
+- **GitHub:** https://github.com/aniket-gupta-88
+- **Email:** guptaaniket.9990@gmail.com
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/900817ac-7baf-4b9b-a6d1-0d0ba93a37ac) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+---

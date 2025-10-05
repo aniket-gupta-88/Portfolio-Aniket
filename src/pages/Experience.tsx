@@ -1,4 +1,4 @@
-import { Briefcase, Calendar } from 'lucide-react';
+import { Briefcase, Calendar, Building2 } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 
 const experienceData = [
@@ -49,14 +49,19 @@ const Experience = () => {
               >
                 <CardHeader>
                   <div className="flex items-start justify-between flex-wrap gap-4">
-                    <div>
-                      <CardTitle className="text-2xl mb-2 flex items-center gap-2">
-                        <Briefcase className="h-5 w-5 text-primary" />
-                        {exp.title}
-                      </CardTitle>
-                      <CardDescription className="text-lg font-semibold text-foreground">
-                        {exp.company}
-                      </CardDescription>
+                    <div className="flex items-start gap-4">
+                      <div className="p-3 rounded-lg bg-primary/10 flex-shrink-0">
+                        <Building2 className="h-8 w-8 text-primary" />
+                      </div>
+                      <div>
+                        <CardTitle className="text-2xl mb-2 flex items-center gap-2">
+                          <Briefcase className="h-5 w-5 text-primary" />
+                          {exp.title}
+                        </CardTitle>
+                        <CardDescription className="text-lg font-semibold text-foreground">
+                          {exp.company}
+                        </CardDescription>
+                      </div>
                     </div>
                     <div className="flex items-center gap-2 text-muted-foreground">
                       <Calendar className="h-4 w-4" />

@@ -1,7 +1,16 @@
-import { Github } from 'lucide-react';
+import { Github, Utensils, MessageSquare, Package, GraduationCap, BookOpen, FileText } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+
+const projectIcons = {
+  Utensils,
+  MessageSquare,
+  Package,
+  GraduationCap,
+  BookOpen,
+  FileText,
+};
 
 const projectsData = [
   {
@@ -10,6 +19,7 @@ const projectsData = [
     technologies: ['Spring Boot', 'React', 'PostgreSQL', 'REST APIs', 'Microservices'],
     github: 'https://github.com/aniket8828/FoodUp',
     status: 'In Development',
+    icon: 'Utensils' as keyof typeof projectIcons,
   },
   {
     title: 'NexTalk - Social Media Platform',
@@ -17,6 +27,15 @@ const projectsData = [
     technologies: ['WebSockets', 'Spring Boot', 'React', 'JWT Auth', 'MongoDB'],
     github: 'https://github.com/aniket8828',
     status: 'Completed',
+    icon: 'MessageSquare' as keyof typeof projectIcons,
+  },
+  {
+    title: 'Inventory Management System',
+    description: 'Full-stack inventory tracking system with automated stock alerts, real-time inventory monitoring, reporting dashboards, and role-based access control. Streamlines warehouse operations and reduces manual tracking errors.',
+    technologies: ['Spring Boot', 'React', 'MySQL', 'REST APIs', 'Redux'],
+    github: 'https://github.com/aniket8828',
+    status: 'Completed',
+    icon: 'Package' as keyof typeof projectIcons,
   },
   {
     title: 'Course Management System',
@@ -24,6 +43,7 @@ const projectsData = [
     technologies: ['React', 'Spring Boot', 'MySQL', 'REST APIs', 'Redux'],
     github: 'https://github.com/aniket8828/CMS_Backend',
     status: 'Completed',
+    icon: 'GraduationCap' as keyof typeof projectIcons,
   },
   {
     title: 'Book Review API',
@@ -31,6 +51,7 @@ const projectsData = [
     technologies: ['Spring Boot', 'MongoDB', 'JWT', 'Swagger', 'Maven'],
     github: 'https://github.com/aniket8828/Book-Review-API',
     status: 'Completed',
+    icon: 'BookOpen' as keyof typeof projectIcons,
   },
   {
     title: 'Blog Application Backend',
@@ -38,6 +59,7 @@ const projectsData = [
     technologies: ['Spring Boot', 'JPA/Hibernate', 'MySQL', 'Spring Security', 'REST APIs'],
     github: 'https://github.com/aniket8828/blog_app_backend',
     status: 'Completed',
+    icon: 'FileText' as keyof typeof projectIcons,
   },
 ];
 
@@ -54,23 +76,28 @@ const Projects = () => {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {projectsData.map((project, index) => (
-              <Card 
-                key={index} 
-                className="flex flex-col animate-slide-up hover:shadow-xl transition-all hover:-translate-y-1"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <CardHeader>
-                  <div className="flex items-start justify-between gap-2">
-                    <CardTitle className="text-xl">{project.title}</CardTitle>
-                    <Badge variant={project.status === 'Completed' ? 'default' : 'secondary'}>
-                      {project.status}
-                    </Badge>
-                  </div>
-                  <CardDescription className="text-base mt-2">
-                    {project.description}
-                  </CardDescription>
-                </CardHeader>
+            {projectsData.map((project, index) => {
+              const IconComponent = projectIcons[project.icon];
+              return (
+                <Card 
+                  key={index} 
+                  className="flex flex-col animate-slide-up hover:shadow-xl transition-all hover:-translate-y-1"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  <CardHeader>
+                    <div className="w-full h-32 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg flex items-center justify-center mb-4">
+                      <IconComponent className="h-16 w-16 text-primary" />
+                    </div>
+                    <div className="flex items-start justify-between gap-2">
+                      <CardTitle className="text-xl">{project.title}</CardTitle>
+                      <Badge variant={project.status === 'Completed' ? 'default' : 'secondary'}>
+                        {project.status}
+                      </Badge>
+                    </div>
+                    <CardDescription className="text-base mt-2">
+                      {project.description}
+                    </CardDescription>
+                  </CardHeader>
                 <CardContent className="flex-grow">
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech, idx) => (
@@ -93,7 +120,8 @@ const Projects = () => {
                   </Button>
                 </CardFooter>
               </Card>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>
